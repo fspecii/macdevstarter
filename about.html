@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Mac App Installer</title>
+    <title>About - macOS Development Environment Setup</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -11,97 +11,137 @@
     <nav class="nav-bar">
         <div class="nav-content">
             <a href="/" class="nav-logo">
-                <i class="fas fa-laptop-code"></i>
-                Mac App Installer
+                <i class="fab fa-apple"></i>
+                <span>Dev Setup</span>
             </a>
             <div class="nav-links">
-                <a href="/#apps">Apps</a>
-                <a href="/about.html">About</a>
-                <a href="https://github.com/fspecii/macdevstarter" target="_blank">GitHub</a>
-                <button id="themeToggle" class="theme-toggle">
+                <a href="/#features">Features</a>
+                <a href="/#tools">Tools</a>
+                <a href="/about.html" class="active">About</a>
+                <div class="theme-toggle" id="themeToggle">
                     <i class="fas fa-moon"></i>
-                </button>
+                </div>
+                <a href="https://github.com/fspecii/macdevstarter" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <section class="hero">
-            <h1>About Mac App Installer</h1>
-            <p class="hero-subtitle">A simple way to set up your Mac with the apps you need</p>
-        </section>
+        <div class="about-section">
+            <div class="about-header">
+                <h1>About Dev Setup</h1>
+                <p class="subtitle">The story behind the tool</p>
+            </div>
 
-        <section class="info-grid">
-            <div class="info-item">
-                <i class="fas fa-user"></i>
-                <h3>Created by Vali Neagu</h3>
-                <p>A developer who wanted to simplify the Mac setup process</p>
+            <div class="creator-card">
+                <div class="creator-info">
+                    <div class="creator-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="creator-details">
+                        <h2>Vali Neagu</h2>
+                        <div class="social-links">
+                            <a href="https://x.com/AmbsdOP" target="_blank" class="social-link">
+                                <i class="fab fa-x-twitter"></i>
+                                @AmbsdOP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="creator-bio">
+                    <p>Hi! I'm Vali Neagu, the creator of Dev Setup. As a developer, I found myself repeatedly setting up new Macs and going through the same installation processes over and over. I created this tool initially to make my own setup process easier, and then decided to make it public to help others facing the same challenge.</p>
+                </div>
             </div>
-            <div class="info-item">
-                <i class="fas fa-lightbulb"></i>
-                <h3>The Idea</h3>
-                <p>Started as a personal tool to streamline fresh macOS installations</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-users"></i>
-                <h3>Now Public</h3>
-                <p>Shared with the community to help others save time</p>
-            </div>
-        </section>
 
-        <section class="info-grid">
-            <div class="info-item">
-                <i class="fas fa-rocket"></i>
-                <h3>Mission</h3>
-                <p>To make setting up a new Mac as simple as checking a few boxes</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Security</h3>
-                <p>All apps are downloaded directly from their official sources</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-code"></i>
-                <h3>Open Source</h3>
-                <p>The entire project is open source and available on GitHub</p>
-            </div>
-        </section>
+            <div class="story-section">
+                <h2>Our Story</h2>
+                <div class="story-card">
+                    <div class="story-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>The Beginning</h3>
+                    <p>The project started as a personal solution to streamline the process of setting up a fresh macOS development environment. What began as a simple script evolved into a comprehensive tool that helps developers get their machines ready for coding in minutes instead of hours.</p>
+                </div>
 
-        <section class="install-section">
-            <a href="/#apps" class="install-button">
-                <i class="fas fa-arrow-left"></i>
-                Back to Apps
-            </a>
-        </section>
+                <div class="story-card">
+                    <div class="story-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Going Public</h3>
+                    <p>After realizing how much time this tool saved me, I decided to make it public and share it with the developer community. The goal was simple: make it easier for everyone to set up their development environment on macOS.</p>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Community Driven</h3>
+                    <p>Today, Dev Setup is used by developers worldwide to quickly set up their macOS development environments. The project continues to grow with community feedback and contributions, making it better with each update.</p>
+                </div>
+            </div>
+
+            <div class="mission-section">
+                <h2>Our Mission</h2>
+                <p>To simplify the development environment setup process on macOS, saving developers time and effort so they can focus on what matters most - writing great code.</p>
+            </div>
+
+            <div class="contact-section">
+                <h2>Get in Touch</h2>
+                <div class="contact-links">
+                    <a href="https://x.com/AmbsdOP" target="_blank" class="contact-link">
+                        <i class="fab fa-x-twitter"></i>
+                        Follow on X (Twitter)
+                    </a>
+                    <a href="https://github.com" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
+        <p>Made with ❤️ for macOS developers</p>
+        <p>This tool is free and open source. <a href="https://github.com" target="_blank">View on GitHub</a></p>
         <div class="footer-links">
-            <a href="about.html">About</a>
-            <a href="https://github.com/fspecii/macdevstarter" target="_blank">GitHub</a>
-            <a href="#privacy">Privacy</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#tools">Tools</a>
+            <a href="about.html" class="active">About</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
         </div>
     </footer>
 
     <script>
-        // Theme toggle functionality
+        // Theme Toggle
         const themeToggle = document.getElementById('themeToggle');
         const html = document.documentElement;
-        const icon = themeToggle.querySelector('i');
+        const themeIcon = themeToggle.querySelector('i');
 
-        // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme') || 'light';
+        function toggleTheme() {
+            if (html.getAttribute('data-theme') === 'dark') {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
         html.setAttribute('data-theme', savedTheme);
-        icon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        themeIcon.classList.remove(savedTheme === 'dark' ? 'fa-sun' : 'fa-moon');
+        themeIcon.classList.add(savedTheme === 'dark' ? 'fa-moon' : 'fa-sun');
 
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
-            html.setAttribute('data-theme', newTheme);
-            icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            localStorage.setItem('theme', newTheme);
-        });
+        themeToggle.addEventListener('click', toggleTheme);
     </script>
 </body>
 </html> 

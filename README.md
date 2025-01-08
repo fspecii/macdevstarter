@@ -1,88 +1,121 @@
-# Mac App Installer
+# 🚀 macOS Dev Starter
 
-A Ninite-style installer for Mac that lets you install multiple apps with a single click. No more downloading and installing apps one by one!
+<div align="center">
 
-![Mac App Installer](screenshot.png)
+![macOS Dev Starter](https://img.shields.io/badge/macOS-Sequoia-blue?style=for-the-badge&logo=apple)
+![Version](https://img.shields.io/badge/version-2.0.0-green?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-orange?style=for-the-badge)
+[![Twitter Follow](https://img.shields.io/twitter/follow/AmbsdOP?style=for-the-badge&logo=x)](https://twitter.com/AmbsdOP)
 
-## Features
+**One-click setup for your perfect macOS development environment**
 
-- 🚀 **One-Click Installation**: Select your apps and install them all at once
-- 🔒 **Safe & Secure**: All apps are downloaded directly from official sources
-- 🔄 **Always Updated**: Get the latest versions of all apps
-- ⚡ **Fast Installation**: Install multiple apps simultaneously
-- 🎨 **Beautiful Interface**: Clean, modern design with dark mode support
-- 💻 **Native Experience**: Feels right at home on macOS
+[Features](#✨-features) • [Get Started](#💻-get-started) • [Usage](#🔧-usage) • [Contributing](#👥-contributing) • [Support](#❤️-support)
 
-## Available Apps
+</div>
 
-### Web Browsers
-- Google Chrome
-- Mozilla Firefox
-- Brave Browser
+## 🎯 About
 
-### Communication
-- Slack
-- Discord
-- Zoom
+macOS Dev Starter is a powerful tool designed to streamline the process of setting up a new development environment on macOS. What started as a personal solution has evolved into a comprehensive tool that helps developers get their machines ready for coding in minutes instead of hours.
 
-### Media
-- VLC Media Player
-- Spotify
-- Handbrake
+## ✨ Features
 
-### Productivity
+- 🔄 **Always Up-to-date**: All tools installed via Homebrew, ensuring latest stable versions
+- 🎮 **No Manual Setup**: Automatic configuration of development environments
+- ⚡ **One-Click Install**: Select your tools and get a single command to install everything
+- 🔍 **Smart Detection**: Skips already installed apps
+- 🛠️ **Customizable**: Choose exactly what you need
+- 🔒 **Safe & Secure**: Uses only official sources and trusted package managers
+
+## 💻 Get Started
+
+Simply visit our website:
+
+🌐 [https://fspecii.github.io/macdevstarter/](https://fspecii.github.io/macdevstarter/)
+
+No installation required! The tool runs directly in your browser.
+
+## 🔧 Usage
+
+1. Visit [macOS Dev Starter](https://fspecii.github.io/macdevstarter/)
+2. Select the tools you want to install
+3. Click "Generate Installation Script"
+4. Copy and paste the generated command in your terminal
+5. Let the magic happen! ✨
+
+## 🛠️ Supported Tools
+
+### Languages & Runtimes
+- Python
+- Node.js
+- Ruby
+- PHP
+- Go
+- Java
+
+### Development Tools
 - Visual Studio Code
-- Notion
-- Rectangle
+- Sublime Text
+- Git
+- Docker
+- Postman
 
-## How It Works
+### Databases
+- MySQL
+- PostgreSQL
+- MongoDB
+- Redis
 
-1. Visit [Mac App Installer](https://github.com/fspecii/macdevstarter)
-2. Select the apps you want to install
-3. Click "Get Your Installer"
-4. Run the installer
-5. Done! All your apps will be installed automatically
+### And many more...
 
-## Getting Started
+## 🔐 Security
 
-```bash
-# Clone the repository
-git clone https://github.com/fspecii/macdevstarter.git
+- ✅ All packages installed through official sources
+- ✅ Uses Homebrew, the trusted package manager for macOS
+- ✅ No bundled software or advertisements
+- ✅ Open source and transparent
 
-# Navigate to the project directory
-cd macdevstarter
+## 💻 System Requirements
 
-# Install dependencies
-npm install
+- macOS Catalina (10.15) or later
+- Administrator privileges
+- Internet connection
+- Both Intel and Apple Silicon Macs supported
 
-# Start the development server
-npm start
-```
+## 👥 Contributing
 
-## Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-We welcome contributions! Here's how you can help:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## About
+## ❤️ Support
 
-Created by Vali Neagu to simplify the process of setting up a new Mac. What started as a personal tool to streamline fresh macOS installations is now available for everyone to use.
+If you find this project helpful, please consider:
+- Giving it a ⭐️ on GitHub
+- Following me on [X/Twitter](https://x.com/AmbsdOP)
+- Sharing it with others
 
-## License
+## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-## Security
+## 👤 Author
 
-All apps are downloaded directly from their official sources. We never store or modify any installation files.
+**Vali Neagu**
+- X/Twitter: [@AmbsdOP](https://x.com/AmbsdOP)
+- GitHub: [@fspecii](https://github.com/fspecii)
 
-## Contact
+## 🙏 Acknowledgments
 
-Vali Neagu - [@AmbsdOP](https://x.com/AmbsdOP)
+- All the amazing developers who contribute to Homebrew
+- The macOS development community
+- Everyone who has contributed to this project
 
-Project Link: [https://github.com/fspecii/macdevstarter](https://github.com/fspecii/macdevstarter)
+---
+
+<div align="center">
+Made with ❤️ for macOS developers
+</div>

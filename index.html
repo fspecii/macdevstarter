@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mac App Installer - Install Multiple Apps at Once</title>
+    <title>macOS Development Environment Setup</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -11,166 +11,352 @@
     <nav class="nav-bar">
         <div class="nav-content">
             <a href="/" class="nav-logo">
-                <i class="fas fa-laptop-code"></i>
-                Mac App Installer
+                <i class="fab fa-apple"></i>
+                <span>Dev Setup</span>
             </a>
             <div class="nav-links">
-                <a href="#apps">Apps</a>
+                <a href="#features" class="active">Features</a>
+                <a href="#tools">Tools</a>
                 <a href="about.html">About</a>
-                <a href="https://github.com/fspecii/macdevstarter" target="_blank">GitHub</a>
-                <button id="themeToggle" class="theme-toggle">
+                <div class="theme-toggle" id="themeToggle">
                     <i class="fas fa-moon"></i>
-                </button>
+                </div>
+                <a href="https://github.com/fspecii/macdevstarter" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <section class="hero">
-            <h1>Install Your Mac Apps in One Click</h1>
-            <p class="hero-subtitle">Select the apps you want, and we'll create a custom installer. Fast, safe, and always up to date.</p>
-        </section>
+        <div class="hero">
+            <div class="hero-content">
+                <div class="badges">
+                    <span class="badge">
+                        <i class="fas fa-check-circle"></i>
+                        macOS Sequoia Ready
+                    </span>
+                    <span class="badge version-badge">
+                        <i class="fas fa-code-branch"></i>
+                        v2.0.0
+                    </span>
+                </div>
+                <h1>macOS Development Environment Setup</h1>
+                <p class="hero-subtitle">Install and update all your development tools at once. No manual configuration. Just pick your apps and go.</p>
+                
+                <div class="hero-actions">
+                    <button class="primary-button">
+                        <i class="fas fa-rocket"></i>
+                        Get Started
+                        <span class="button-hint">Free & Open Source</span>
+                    </button>
+                    <button class="secondary-button">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
 
-        <section class="app-categories" id="apps">
-            <div class="category">
-                <h2>Web Browsers</h2>
-                <div class="app-grid">
-                    <div class="app-item">
-                        <input type="checkbox" id="chrome">
-                        <i class="fab fa-chrome app-icon"></i>
-                        <label for="chrome" class="app-name">Chrome</label>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-value">10k+</span>
+                        <span class="stat-label">Downloads</span>
                     </div>
-                    <div class="app-item">
-                        <input type="checkbox" id="firefox">
-                        <i class="fab fa-firefox app-icon"></i>
-                        <label for="firefox" class="app-name">Firefox</label>
+                    <div class="stat-item">
+                        <span class="stat-value">50+</span>
+                        <span class="stat-label">Tools</span>
                     </div>
-                    <div class="app-item">
-                        <input type="checkbox" id="brave">
-                        <i class="fab fa-safari app-icon"></i>
-                        <label for="brave" class="app-name">Brave</label>
+                    <div class="stat-item">
+                        <span class="stat-value">4.9/5</span>
+                        <span class="stat-label">Rating</span>
                     </div>
                 </div>
             </div>
 
-            <div class="category">
-                <h2>Communication</h2>
-                <div class="app-grid">
-                    <div class="app-item">
-                        <input type="checkbox" id="slack">
-                        <i class="fab fa-slack app-icon"></i>
-                        <label for="slack" class="app-name">Slack</label>
+            <div class="features" id="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
                     </div>
-                    <div class="app-item">
-                        <input type="checkbox" id="discord">
-                        <i class="fab fa-discord app-icon"></i>
-                        <label for="discord" class="app-name">Discord</label>
+                    <h3>Always Up-to-date</h3>
+                    <p>All tools are installed using Homebrew, ensuring you get the latest stable versions.</p>
+                    <a href="#learn-more" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
                     </div>
-                    <div class="app-item">
-                        <input type="checkbox" id="zoom">
-                        <i class="fas fa-video app-icon"></i>
-                        <label for="zoom" class="app-name">Zoom</label>
+                    <h3>No Manual Setup</h3>
+                    <p>Automatic configuration of development environments and system preferences.</p>
+                    <a href="#learn-more" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
                     </div>
+                    <h3>One-Click Install</h3>
+                    <p>Select your tools and get a single command to install everything.</p>
+                    <a href="#learn-more" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
+        </div>
 
-            <div class="category">
-                <h2>Media</h2>
-                <div class="app-grid">
-                    <div class="app-item">
-                        <input type="checkbox" id="vlc">
-                        <i class="fas fa-play-circle app-icon"></i>
-                        <label for="vlc" class="app-name">VLC</label>
+        <div class="updates-section">
+            <div class="section-header">
+                <div class="header-left">
+                    <h2>Latest Updates</h2>
+                    <span class="subtitle">Real-time package updates</span>
+                </div>
+                <button class="view-all">
+                    View All
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="updates">
+                <div class="update-item">
+                    <div class="update-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <div class="app-item">
-                        <input type="checkbox" id="spotify">
-                        <i class="fab fa-spotify app-icon"></i>
-                        <label for="spotify" class="app-name">Spotify</label>
-                    </div>
-                    <div class="app-item">
-                        <input type="checkbox" id="handbrake">
-                        <i class="fas fa-film app-icon"></i>
-                        <label for="handbrake" class="app-name">Handbrake</label>
+                    <div class="update-content">
+                        <div class="update-header">
+                            <span class="app">Visual Studio Code</span>
+                            <span class="version">v1.85.1</span>
+                        </div>
+                        <p>Updated to latest version</p>
+                        <div class="update-meta">
+                            <span class="time"><i class="far fa-clock"></i> 2 hours ago</span>
+                            <span class="type">Security Update</span>
+                        </div>
                     </div>
                 </div>
+                <!-- Similar structure for other update items -->
             </div>
+        </div>
 
-            <div class="category">
-                <h2>Productivity</h2>
-                <div class="app-grid">
-                    <div class="app-item">
-                        <input type="checkbox" id="vscode">
-                        <i class="fas fa-code app-icon"></i>
-                        <label for="vscode" class="app-name">VS Code</label>
-                    </div>
-                    <div class="app-item">
-                        <input type="checkbox" id="notion">
-                        <i class="fas fa-sticky-note app-icon"></i>
-                        <label for="notion" class="app-name">Notion</label>
-                    </div>
-                    <div class="app-item">
-                        <input type="checkbox" id="rectangle">
-                        <i class="fas fa-window-maximize app-icon"></i>
-                        <label for="rectangle" class="app-name">Rectangle</label>
-                    </div>
+        <div class="search-section">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-bar" placeholder="Search tools... (e.g., 'python', 'docker', 'vscode')">
+                <button class="search-button">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="search-tags">
+                <span class="tag active">
+                    <i class="fas fa-star"></i>
+                    Popular
+                </span>
+                <span class="tag">
+                    <i class="fas fa-clock"></i>
+                    Recently Updated
+                </span>
+                <span class="tag">
+                    <i class="fas fa-thumbs-up"></i>
+                    Recommended
+                </span>
+            </div>
+        </div>
+
+        <div class="tools-section" id="tools">
+            <div class="section-header">
+                <div class="header-left">
+                    <h2>Available Tools</h2>
+                    <span class="subtitle">Select the tools you want to install</span>
+                </div>
+                <div class="view-options">
+                    <button class="view-option active" data-view="grid" id="gridView">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="view-option" data-view="list" id="listView">
+                        <i class="fas fa-list"></i>
+                    </button>
                 </div>
             </div>
-        </section>
+            
+            <div class="categories grid-view" id="categoriesContainer">
+                <!-- Categories will be dynamically populated by JavaScript -->
+            </div>
+        </div>
 
-        <section class="install-section">
-            <button class="install-button">
-                <i class="fas fa-download"></i>
-                Get Your Installer
+        <div class="actions">
+            <button class="generate-button" onclick="generateCommands()">
+                <i class="fas fa-terminal"></i>
+                Generate Installation Script
+                <span class="button-hint">Press Enter ↵</span>
             </button>
-            <p class="install-hint">Your installer will include only the apps you selected</p>
-        </section>
-
-        <section class="info-grid">
-            <div class="info-item">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Safe & Secure</h3>
-                <p>All apps are downloaded directly from official sources</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-bolt"></i>
-                <h3>Fast Installation</h3>
-                <p>Install multiple apps simultaneously</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-sync"></i>
-                <h3>Always Updated</h3>
-                <p>Get the latest versions of all apps</p>
-            </div>
-        </section>
+        </div>
     </div>
 
-    <footer>
-        <div class="footer-links">
-            <a href="about.html">About</a>
-            <a href="https://github.com/fspecii/macdevstarter" target="_blank">GitHub</a>
-            <a href="#privacy">Privacy</a>
+    <div class="info-section">
+        <h2>What this tool will do:</h2>
+        <ul class="info-list">
+            <li>Start working as soon as you run the script</li>
+            <li>Install apps using Homebrew for consistent package management</li>
+            <li>Configure system preferences automatically</li>
+            <li>Install the latest stable versions of all apps</li>
+            <li>Skip already installed apps</li>
+            <li>Set up development environments properly</li>
+            <li>Configure terminal with useful plugins and themes</li>
+            <li>Install VS Code extensions if selected</li>
+            <li>Work with both Intel and Apple Silicon Macs</li>
+            <li>Save you hours of manual setup time!</li>
+        </ul>
+
+        <div class="requirements">
+            <h3>System Requirements</h3>
+            <p>This tool works on macOS Catalina (10.15) or later.</p>
+            <p>You'll need administrator privileges to install some components.</p>
         </div>
-    </footer>
+
+        <div class="trust-section">
+            <h3>Safe and Secure</h3>
+            <ul>
+                <li>All packages are installed through official sources</li>
+                <li>Uses Homebrew, the trusted package manager for macOS</li>
+                <li>No bundled software or advertisements</li>
+                <li>Open source and transparent</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ for macOS developers</p>
+            <p>This tool is free and open source. <a href="https://github.com/fspecii/macdevstarter" target="_blank">View on GitHub</a></p>
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#tools">Tools</a>
+                <a href="about.html">About</a>
+                <a href="https://github.com/fspecii/macdevstarter" target="_blank">GitHub</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="commandModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h2 class="modal-title">Installation Instructions</h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            
+            <div class="modal-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Copy the Command</h3>
+                        <p>Click the "Copy" button below to copy the installation command to your clipboard.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Open Terminal</h3>
+                        <p>Open Terminal.app on your Mac (you can use Spotlight and type "Terminal").</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Paste and Run</h3>
+                        <p>Paste the command (⌘+V) into Terminal and press Enter to start the installation.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Wait for Completion</h3>
+                        <p>The script will run automatically. You may need to enter your password when prompted.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="command-output">
+                <div class="command-header">
+                    <h3 class="command-title">Installation Command</h3>
+                    <div class="copy-indicator">Copied!</div>
+                </div>
+                <pre></pre>
+            </div>
+
+            <div class="modal-actions">
+                <button class="copy-button">Copy Command</button>
+                <button class="close-button" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import UIHandler from './js/ui-handler.js';
+        
+        // Initialize the UI handler when the DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            window.uiHandler = new UIHandler();
+        });
+
+        // Make necessary functions available globally
+        window.generateCommands = () => window.uiHandler.generateScript();
+        window.closeModal = () => window.uiHandler.closeModal();
+    </script>
 
     <script>
-        // Theme toggle functionality
+        // Theme Toggle
         const themeToggle = document.getElementById('themeToggle');
         const html = document.documentElement;
-        const icon = themeToggle.querySelector('i');
+        const themeIcon = themeToggle.querySelector('i');
 
-        // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme') || 'light';
+        function toggleTheme() {
+            if (html.getAttribute('data-theme') === 'dark') {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
         html.setAttribute('data-theme', savedTheme);
-        icon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        themeIcon.classList.remove(savedTheme === 'dark' ? 'fa-sun' : 'fa-moon');
+        themeIcon.classList.add(savedTheme === 'dark' ? 'fa-moon' : 'fa-sun');
 
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
-            html.setAttribute('data-theme', newTheme);
-            icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            localStorage.setItem('theme', newTheme);
-        });
+        themeToggle.addEventListener('click', toggleTheme);
+
+        // Grid/List View Toggle
+        const gridViewBtn = document.getElementById('gridView');
+        const listViewBtn = document.getElementById('listView');
+        const categoriesContainer = document.getElementById('categoriesContainer');
+
+        function setView(view) {
+            if (view === 'grid') {
+                categoriesContainer.classList.remove('list-view');
+                categoriesContainer.classList.add('grid-view');
+                gridViewBtn.classList.add('active');
+                listViewBtn.classList.remove('active');
+                localStorage.setItem('view', 'grid');
+            } else {
+                categoriesContainer.classList.remove('grid-view');
+                categoriesContainer.classList.add('list-view');
+                listViewBtn.classList.add('active');
+                gridViewBtn.classList.remove('active');
+                localStorage.setItem('view', 'list');
+            }
+        }
+
+        // Load saved view
+        const savedView = localStorage.getItem('view') || 'grid';
+        setView(savedView);
+
+        gridViewBtn.addEventListener('click', () => setView('grid'));
+        listViewBtn.addEventListener('click', () => setView('list'));
     </script>
 </body>
 </html> 
