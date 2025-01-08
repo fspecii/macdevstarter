@@ -1,53 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MacSetup.live - The Best Ninite Alternative for Mac | Install Apps in One Click</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="MacSetup.live is the best Ninite alternative for Mac. Install multiple apps at once with a single click. No ads, no bundled software. 100+ popular apps including Chrome, Spotify, VS Code, and more.">
-    <meta name="keywords" content="macsetup live, mac app installer, ninite for mac, mac bulk app installer, mac app downloader, macos app installer, bulk install mac apps">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="MacSetup.live - The Best Ninite Alternative for Mac">
-    <meta property="og:description" content="Install all your favorite Mac apps in one click. No ads, no bundled software. The easiest way to set up your Mac.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://macsetup.live">
-    <meta property="og:site_name" content="MacSetup.live">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MacSetup.live - The Best Ninite Alternative for Mac">
-    <meta name="twitter:description" content="Install all your favorite Mac apps in one click. No ads, no bundled software. The easiest way to set up your Mac.">
-    
-    <!-- Additional Meta Tags -->
-    <meta name="author" content="MacSetup.live">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <link rel="canonical" href="https://macsetup.live">
-    
-    <!-- Modern CSS Reset -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <!-- Inter font for better cross-platform consistency -->
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- Custom styles -->
+    <title>macOS Development Environment Setup</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="nav-bar">
         <div class="nav-content">
             <a href="/" class="nav-logo">
                 <i class="fab fa-apple"></i>
-                <span>MacSetup.live</span>
+                <span>Dev Setup</span>
             </a>
             <div class="nav-links">
                 <a href="#features" class="active">Features</a>
-                <a href="#apps">Apps</a>
+                <a href="#tools">Tools</a>
                 <a href="about.html">About</a>
                 <div class="theme-toggle" id="themeToggle">
                     <i class="fas fa-moon"></i>
@@ -73,33 +42,33 @@
                         v2.0.0
                     </span>
                 </div>
-                <h1>The Best Ninite Alternative for Mac</h1>
-                <p class="hero-subtitle">Install all your favorite Mac apps in one click. No ads, no bundled software, just pure simplicity. Perfect for setting up your new Mac or reinstalling apps.</p>
+                <h1>macOS Development Environment Setup</h1>
+                <p class="hero-subtitle">Install and update all your development tools at once. No manual configuration. Just pick your apps and go.</p>
                 
                 <div class="hero-actions">
                     <button class="primary-button">
-                        <i class="fas fa-magic"></i>
-                        Install Your Apps
-                        <span class="button-hint">100% Free</span>
+                        <i class="fas fa-rocket"></i>
+                        Get Started
+                        <span class="button-hint">Free & Open Source</span>
                     </button>
-                    <a href="#apps" class="secondary-button">
-                        <i class="fas fa-th-large"></i>
-                        Pick Your Apps
-                    </a>
+                    <button class="secondary-button">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
                 </div>
 
                 <div class="stats">
                     <div class="stat-item">
-                        <span class="stat-value">100+</span>
-                        <span class="stat-label">Popular Apps</span>
+                        <span class="stat-value">10k+</span>
+                        <span class="stat-label">Downloads</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">1M+</span>
-                        <span class="stat-label">Happy Users</span>
+                        <span class="stat-value">50+</span>
+                        <span class="stat-label">Tools</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-value">4.9/5</span>
-                        <span class="stat-label">User Rating</span>
+                        <span class="stat-label">Rating</span>
                     </div>
                 </div>
             </div>
@@ -107,60 +76,92 @@
             <div class="features" id="features">
                 <div class="feature">
                     <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Always Up-to-date</h3>
+                    <p>All tools are installed using Homebrew, ensuring you get the latest stable versions.</p>
+                    <a href="#learn-more" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>No Manual Setup</h3>
+                    <p>Automatic configuration of development environments and system preferences.</p>
+                    <a href="#learn-more" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>One-Click Install</h3>
-                    <p>Just like Ninite, but made specifically for Mac. Select your apps and install everything at once.</p>
+                    <p>Select your tools and get a single command to install everything.</p>
                     <a href="#learn-more" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Safe & Secure</h3>
-                    <p>All apps are downloaded directly from official sources. No bundled software, no ads, no tracking.</p>
-                    <a href="#learn-more" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <h3>Always Updated</h3>
-                    <p>Get the latest versions of your favorite apps. Perfect for new Macs or clean installs.</p>
-                    <a href="#learn-more" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
                 </div>
             </div>
+        </div>
+
+        <div class="updates-section">
+            <div class="section-header">
+                <div class="header-left">
+                    <h2>Latest Updates</h2>
+                    <span class="subtitle">Real-time package updates</span>
+                </div>
+                <button class="view-all">
+                    View All
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="updates">
+                <div class="update-item">
+                    <div class="update-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="update-content">
+                        <div class="update-header">
+                            <span class="app">Visual Studio Code</span>
+                            <span class="version">v1.85.1</span>
+                        </div>
+                        <p>Updated to latest version</p>
+                        <div class="update-meta">
+                            <span class="time"><i class="far fa-clock"></i> 2 hours ago</span>
+                            <span class="type">Security Update</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Similar structure for other update items -->
+            </div>
+        </div>
 
         <div class="search-section">
             <div class="search-container">
                 <i class="fas fa-search search-icon"></i>
-                <input type="text" class="search-bar" placeholder="Search apps... (e.g., 'Chrome', 'Spotify', 'WhatsApp')">
+                <input type="text" class="search-bar" placeholder="Search tools... (e.g., 'python', 'docker', 'vscode')">
                 <button class="search-button">
                     <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
             <div class="search-tags">
-                <button class="tag" data-filter="recommended">
-                    <i class="fas fa-thumbs-up"></i>
-                    Recommended
-                </button>
-                <button class="tag active" data-filter="popular">
+                <span class="tag active">
                     <i class="fas fa-star"></i>
                     Popular
-                </button>
-                <button class="tag" data-filter="new">
+                </span>
+                <span class="tag">
                     <i class="fas fa-clock"></i>
-                    New Apps
-                </button>
+                    Recently Updated
+                </span>
+                <span class="tag">
+                    <i class="fas fa-thumbs-up"></i>
+                    Recommended
+                </span>
             </div>
         </div>
 
-        <div class="tools-section" id="apps">
+        <div class="tools-section" id="tools">
             <div class="section-header">
                 <div class="header-left">
-                    <h2>Available Apps</h2>
-                    <span class="subtitle">Select the apps you want to install</span>
+                    <h2>Available Tools</h2>
+                    <span class="subtitle">Select the tools you want to install</span>
                 </div>
                 <div class="view-options">
                     <button class="view-option active" data-view="grid" id="gridView">
@@ -169,105 +170,62 @@
                     <button class="view-option" data-view="list" id="listView">
                         <i class="fas fa-list"></i>
                     </button>
+                </div>
             </div>
-        </div>
-
+            
             <div class="categories grid-view" id="categoriesContainer">
-            <!-- Categories will be dynamically populated by JavaScript -->
+                <!-- Categories will be dynamically populated by JavaScript -->
             </div>
         </div>
 
         <div class="actions">
             <button class="generate-button" onclick="generateCommands()">
-                <i class="fas fa-magic"></i>
-                Install Selected Apps
+                <i class="fas fa-terminal"></i>
+                Generate Installation Script
                 <span class="button-hint">Press Enter ↵</span>
             </button>
         </div>
     </div>
 
     <div class="info-section">
-        <h2>Why Choose MacAppInstaller?</h2>
+        <h2>What this tool will do:</h2>
         <ul class="info-list">
-            <li>The best Ninite alternative made specifically for Mac</li>
-            <li>Install multiple apps with one click - no more manual downloads</li>
-            <li>100+ popular Mac apps available</li>
-            <li>Direct downloads from official sources</li>
-            <li>No bundled software or advertisements</li>
-            <li>Always get the latest versions</li>
-            <li>Works with both Intel and Apple Silicon Macs</li>
-            <li>Beautiful, native macOS interface</li>
-            <li>100% free and open source</li>
-            <li>Trusted by millions of Mac users worldwide</li>
+            <li>Start working as soon as you run the script</li>
+            <li>Install apps using Homebrew for consistent package management</li>
+            <li>Configure system preferences automatically</li>
+            <li>Install the latest stable versions of all apps</li>
+            <li>Skip already installed apps</li>
+            <li>Set up development environments properly</li>
+            <li>Configure terminal with useful plugins and themes</li>
+            <li>Install VS Code extensions if selected</li>
+            <li>Work with both Intel and Apple Silicon Macs</li>
+            <li>Save you hours of manual setup time!</li>
         </ul>
 
         <div class="requirements">
             <h3>System Requirements</h3>
-            <p>Works on macOS Catalina (10.15) or later. Compatible with both Intel and Apple Silicon Macs.</p>
-            <p>You'll need administrator privileges to install apps.</p>
+            <p>This tool works on macOS Catalina (10.15) or later.</p>
+            <p>You'll need administrator privileges to install some components.</p>
         </div>
 
         <div class="trust-section">
             <h3>Safe and Secure</h3>
             <ul>
-                <li>All apps downloaded from official sources</li>
+                <li>All packages are installed through official sources</li>
+                <li>Uses Homebrew, the trusted package manager for macOS</li>
                 <li>No bundled software or advertisements</li>
                 <li>Open source and transparent</li>
-                <li>Privacy-focused - we don't collect any data</li>
             </ul>
         </div>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-section">
-                        <h3>MacAppInstaller</h3>
-                        <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#categories">Categories</a></li>
-                            <li><a href="https://github.com/fspecii/macdevstarter" target="_blank">GitHub</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Categories</h3>
-                        <ul>
-                            <li><a href="#browsers">Web Browsers</a></li>
-                            <li><a href="#media">Media Tools</a></li>
-                            <li><a href="#communication">Communication</a></li>
-                            <li><a href="#office">Office & Documents</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Resources</h3>
-                        <ul>
-                            <li><a href="#docs">Documentation</a></li>
-                            <li><a href="#support">Support</a></li>
-                            <li><a href="#privacy">Privacy Policy</a></li>
-                            <li><a href="#terms">Terms of Use</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Connect</h3>
-                        <div class="social-links">
-                            <a href="https://github.com/fspecii/macdevstarter" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#twitter" class="social-link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#discord" class="social-link">
-                                <i class="fab fa-discord"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <div class="footer-legal">
-                        <p>&copy; 2024 MacAppInstaller. All rights reserved.</p>
-                        <p>Designed in California. Made with ❤️ for Mac users.</p>
-                    </div>
-                </div>
+        <footer>
+            <p>Made with ❤️ for macOS developers</p>
+            <p>This tool is free and open source. <a href="https://github.com/fspecii/macdevstarter" target="_blank">View on GitHub</a></p>
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#tools">Tools</a>
+                <a href="about.html">About</a>
+                <a href="https://github.com/fspecii/macdevstarter" target="_blank">GitHub</a>
             </div>
         </footer>
     </div>
@@ -319,25 +277,14 @@
             <div class="command-output">
                 <div class="command-header">
                     <h3 class="command-title">Installation Command</h3>
-                    <div class="copy-feedback">
-                        <span class="copy-indicator">Copied!</span>
-                        <span class="paste-hint">Now paste it in Terminal (⌘+V)</span>
-                    </div>
+                    <div class="copy-indicator">Copied!</div>
                 </div>
-                <div class="command-content">
-                    <pre><span class="display-command" id="displayCommand"></span><span class="full-command" id="fullCommand"></span></pre>
-                    <button class="copy-button" onclick="copyCommand()">
-                        <i class="far fa-copy"></i>
-                    </button>
-                </div>
+                <pre></pre>
             </div>
 
             <div class="modal-actions">
-                <button class="modal-button secondary" onclick="closeModal()">Close</button>
-                <button class="modal-button" onclick="copyCommand()">
-                    <i class="fas fa-terminal"></i>
-                    Start Installation
-                </button>
+                <button class="copy-button">Copy Command</button>
+                <button class="close-button" onclick="closeModal()">Close</button>
             </div>
         </div>
     </div>
@@ -382,89 +329,6 @@
         themeIcon.classList.add(savedTheme === 'dark' ? 'fa-moon' : 'fa-sun');
 
         themeToggle.addEventListener('click', toggleTheme);
-
-        // Command Modal
-        const modal = document.getElementById('commandModal');
-        const closeBtn = document.querySelector('.modal-close');
-        const commandElement = document.getElementById('installCommand');
-        const copyIndicator = document.querySelector('.copy-indicator');
-
-        function generateCommands() {
-            const timestamp = Date.now();
-            const displayCommand = `curl -fsSL https://raw.githubusercontent.com/fspecii/macdevstarter/main/install.sh | bash`;
-            const fullCommand = `cat << 'EOF' > ~/setup_${timestamp}.sh
-#!/bin/bash
-
-# Colors for output
-RED='\\033[0;31m'
-GREEN='\\033[0;32m'
-YELLOW='\\033[1;33m'
-NC='\\033[0m'
-
-# Error handling
-set -e
-trap 'echo "\\n${RED}Installation failed. Check the error message above.${NC}"' ERR
-
-echo "${GREEN}Starting macOS development environment setup...${NC}"
-
-# Check if Homebrew is installed
-if ! command -v brew &> /dev/null; then
-    echo "${YELLOW}Installing Homebrew...${NC}"
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
-# Update Homebrew
-echo "${YELLOW}Updating Homebrew...${NC}"
-brew update
-
-# Installing applications
-echo "${YELLOW}Installing applications...${NC}"
-brew install --cask vlc
-
-# Cleanup
-echo "${YELLOW}Cleaning up...${NC}"
-brew cleanup
-
-echo "${GREEN}Setup completed successfully!${NC}"
-EOF
-
-chmod +x ~/setup_${timestamp}.sh
-~/setup_${timestamp}.sh`;
-
-            document.getElementById('displayCommand').textContent = displayCommand;
-            document.getElementById('fullCommand').textContent = fullCommand;
-            modal.style.display = 'flex';
-        }
-
-        function copyCommand() {
-            const command = document.getElementById('fullCommand').textContent;
-            navigator.clipboard.writeText(command).then(() => {
-                copyIndicator.classList.add('show');
-                setTimeout(() => {
-                    copyIndicator.classList.remove('show');
-                }, 2000);
-            });
-        }
-
-        function closeModal() {
-            modal.style.display = 'none';
-        }
-
-        function startInstallation() {
-            const command = commandElement.textContent;
-            navigator.clipboard.writeText(command).then(() => {
-                alert('Command copied! Please paste it into your Terminal and press Enter to start the installation.');
-            });
-        }
-
-        closeBtn.addEventListener('click', closeModal);
-        window.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
 
         // Grid/List View Toggle
         const gridViewBtn = document.getElementById('gridView');
