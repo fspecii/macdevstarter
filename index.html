@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac App Installer - Install Multiple Apps at Once</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="/" class="nav-logo">
+                <i class="fas fa-laptop-code"></i>
+                Mac App Installer
+            </a>
+            <div class="nav-links">
+                <a href="#apps">Apps</a>
+                <a href="about.html">About</a>
+                <a href="https://github.com/fspecii/macdevstarter" target="_blank">GitHub</a>
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Install Your Mac Apps in One Click</h1>
+            <p class="hero-subtitle">Select the apps you want, and we'll create a custom installer. Fast, safe, and always up to date.</p>
+        </section>
+
+        <section class="app-categories" id="apps">
+            <div class="category">
+                <h2>Web Browsers</h2>
+                <div class="app-grid">
+                    <div class="app-item">
+                        <input type="checkbox" id="chrome">
+                        <i class="fab fa-chrome app-icon"></i>
+                        <label for="chrome" class="app-name">Chrome</label>
+                    </div>
+                    <div class="app-item">
+                        <input type="checkbox" id="firefox">
+                        <i class="fab fa-firefox app-icon"></i>
+                        <label for="firefox" class="app-name">Firefox</label>
+                    </div>
+                    <div class="app-item">
+                        <input type="checkbox" id="brave">
+                        <i class="fab fa-safari app-icon"></i>
+                        <label for="brave" class="app-name">Brave</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>Communication</h2>
+                <div class="app-grid">
+                    <div class="app-item">
+                        <input type="checkbox" id="slack">
+                        <i class="fab fa-slack app-icon"></i>
+                        <label for="slack" class="app-name">Slack</label>
+                    </div>
+                    <div class="app-item">
+                        <input type="checkbox" id="discord">
+                        <i class="fab fa-discord app-icon"></i>
+                        <label for="discord" class="app-name">Discord</label>
+                    </div>
+                    <div class="app-item">
+                        <input type="checkbox" id="zoom">
+                        <i class="fas fa-video app-icon"></i>
+                        <label for="zoom" class="app-name">Zoom</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>Media</h2>
+                <div class="app-grid">
+                    <div class="app-item">
+                        <input type="checkbox" id="vlc">
+                        <i class="fas fa-play-circle app-icon"></i>
+                        <label for="vlc" class="app-name">VLC</label>
+                    </div>
+                    <div class="app-item">
+                        <input type="checkbox" id="spotify">
+                        <i class="fab fa-spotify app-icon"></i>
+                        <label for="spotify" class="app-name">Spotify</label>
+                    </div>
+                    <div class="app-item">
+                        <input type="checkbox" id="handbrake">
+                        <i class="fas fa-film app-icon"></i>
+                        <label for="handbrake" class="app-name">Handbrake</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>Productivity</h2>
+                <div class="app-grid">
+                    <div class="app-item">
+                        <input type="checkbox" id="vscode">
+                        <i class="fas fa-code app-icon"></i>
+                        <label for="vscode" class="app-name">VS Code</label>
+                    </div>
+                    <div class="app-item">
+                        <input type="checkbox" id="notion">
+                        <i class="fas fa-sticky-note app-icon"></i>
+                        <label for="notion" class="app-name">Notion</label>
+                    </div>
+                    <div class="app-item">
+                        <input type="checkbox" id="rectangle">
+                        <i class="fas fa-window-maximize app-icon"></i>
+                        <label for="rectangle" class="app-name">Rectangle</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="install-section">
+            <button class="install-button">
+                <i class="fas fa-download"></i>
+                Get Your Installer
+            </button>
+            <p class="install-hint">Your installer will include only the apps you selected</p>
+        </section>
+
+        <section class="info-grid">
+            <div class="info-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safe & Secure</h3>
+                <p>All apps are downloaded directly from official sources</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast Installation</h3>
+                <p>Install multiple apps simultaneously</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-sync"></i>
+                <h3>Always Updated</h3>
+                <p>Get the latest versions of all apps</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="https://github.com/fspecii/macdevstarter" target="_blank">GitHub</a>
+            <a href="#privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const icon = themeToggle.querySelector('i');
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+        icon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html> 
